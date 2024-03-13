@@ -1,0 +1,39 @@
+body {
+    background-color: #85AFD4;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-weight: bold;   
+}
+
+a {
+    font-weight: bold;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #E47272;
+    color: white;
+    border-radius: 20px;
+}
+
+input {
+    border: 2px solid white;
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+input {
+    display: block;
+    margin-left: auto; /* Align inputs to the right */
+}
+
