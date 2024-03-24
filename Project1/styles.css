@@ -1,11 +1,25 @@
 body {
-    background-color: chocolate;
+    background-image: red;
 }
 h1 {
-    text-align: center;
-    text-shadow: 20px;
     font-family: "Sofia", sans-serif;
-    font-size: 100px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    color: white;
+    text-shadow: 10px 10px black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.coffee {
+    background-image: url(images/coffee_beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    height: 80vh;
+}
+.bg-text {
+    color: darkred;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
