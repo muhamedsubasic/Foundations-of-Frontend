@@ -1,5 +1,4 @@
 body {
-    background-image: red;
 }
 h1 {
     font-family: "Sofia", sans-serif;
@@ -9,17 +8,69 @@ h1 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
 }
 .coffee {
     background-image: url(images/coffee_beans.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(5px);
-    height: 80vh;
+    filter: blur(4px);
+    height: 90vh;
+}
+#bean {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    animation-name: beanmove;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes beanmove {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    20% {
+        left: 0px;
+        top: 10%;
+    }
+    40% {
+        left: 0px;
+        top: 0px;
+        transform: rotate(360deg);
+    }
+    60% {
+        left: 0px;
+        top: 85%;
+    }
+    80% {
+        left: 0px;
+        top: 75%;
+    }
+    100% {
+        left: 0px;
+        top: 85%;
+    }
 }
 .bg-text {
-    color: darkred;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    color: white;
+    background-color: rgba(206, 153, 85, 0.402);
+    backdrop-filter: blur(3px);
+}
+
+.carousel .carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    position: cover;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 700px;
+}
+footer {
+    background-color: burlywood;
 }

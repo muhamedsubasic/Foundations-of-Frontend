@@ -13,11 +13,14 @@
     </head>
     <body>
         <header>
-            <h1 class="display-1">Simple Coffee</h1>
-            <div class="coffee"></div>
+            <img src="images/bean.png" id="bean" class="z-2" alt="bean" width="100px" height="50px" />
+            <div class="text-center">
+                <h1 class="display-1 z-1">Simple Coffee</h1>
+                <div class="coffee"></div>
+            </div>
         </header>
         <!--Navigaion bar with sticky top-->
-        <nav class="navbar sticky-top navbar-expand-lg bg-light flexible">
+        <nav class="navbar sticky-top navbar-expand-lg bg-light flexible border-1">
             <div class="container-fluid">
                 <img class="d-none d-lg-block" src="images/c_icon.png" alt="coffee_icon" width="50px" height="50px" />
                 <a class="navbar-brand" href="#">SimpleCoffee</a>
@@ -27,91 +30,106 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
+                            <a class="nav-link" href="#products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#aboutus">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!--Introduction section just something simple-->
-        <div class="d-grid justify-content-center">
-            <section>
+        <div class="container-lg my-5">
+            <section class="text-center">
                 <h2>Welcome to Simple Coffee</h2>
-                <p class="text-center">The finest coffee experience in town.</p>
+                <p id="products">The finest coffee experience in town.</p>
             </section>
         </div>
-        <!--Products TODO: Add images-->
-        <div class="container">
-            <div class="row">
-                <div id="carouselExampleCaptions" class="carousel slide bg-danger">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/coffee_regular.jpg" alt="Coffee Regular" height="700px" width="100%" />
-                            <div class="carousel-caption">
-                                <div class="d-grid align-content-start">
-                                    <h4 class="col-lg-3 text-start fw-bolder bg-text px-2">Regular Coffee</h4>
-                                    <p class="col-lg-8 text-start fw-bold bg-text px-2">coffee coffee coffee coffee coffee coffee coffee coffee</p>
-                                    <button type="button" class="btn btn-success btn-lg col-lg-3 fw-bolder">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/coffee_red.jpg" alt="Coffee Red" height="700px" width="100%" />
-                            <div class="carousel-caption">
-                                <div class="d-grid align-content-start">
-                                    <h4 class="col-lg-3 text-start fw-bolder bg-text px-2">Extreme Coffee</h4>
-                                    <p class="col-lg-8 text-start fw-bold bg-text px-2">coffee coffee coffee coffee coffee coffee coffee coffee</p>
-                                    <button type="button" class="btn btn-success btn-lg col-lg-3">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/coffee_green.jpg" alt="Coffee Green" height="700px" width="100%" />
-                            <div class="carousel-caption">
-                                <div class="d-grid align-content-start">
-                                    <h4 class="col-lg-3 text-start fw-bolder bg-text px-2">Strong Coffee</h4>
-                                    <p class="col-lg-8 text-start fw-bold bg-text px-2">coffee coffee coffee coffee coffee coffee coffee coffee</p>
-                                    <button type="button" class="btn btn-success btn-lg col-lg-3">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/coffee_yellow.jpg" alt="..." height="700px" width="100%" />
-                            <div class="carousel-caption">
-                                <div class="d-grid align-content-start">
-                                    <h4 class="col-lg-3 text-start fw-bolder bg-text px-2">Decafe Coffee</h4>
-                                    <p class="col-lg-8 text-start fw-bold bg-text px-2">coffee coffee coffee coffee coffee coffee coffee coffee</p>
-                                    <button type="button" class="btn btn-success btn-lg col-lg-3">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+        <!--Products carousel-->
+        <div class="container-xl">
+            <h2 class="text-center">Our Products</h2>
+            <div id="carouselExampleCaptions" class="carousel slide carousell">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/coffee_regular.jpg" class="d-block w-100" alt="Coffee Regular"" />
+                        <div class="carousel-caption">
+                            <div class="d-grid align-content-start">
+                                <div class="text-start">
+                                    <h4 class="d-inline-block fw-bolder bg-text px-2">Regular Coffee</h4>
+                                    <br />
+                                    <p class="d-inline-block bg-text px-2">Our original taste just the way it is</p>
+                                    <br />
+                                    <button type="button" class="btn btn-success btn-lg fw-bolder">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/coffee_red.jpg" class="d-block w-100" alt="Coffee Red" />
+                        <div class="carousel-caption">
+                            <div class="d-grid align-content-start">
+                                <div class="text-start">
+                                    <h4 class="d-inline-block fw-bolder bg-text px-2">Extreme Coffee</h4>
+                                    <br />
+                                    <p class="d-inline-block bg-text px-2">Planning on no sleeping? This is just the right mix</p>
+                                    <br />
+                                    <button type="button" class="btn btn-success btn-lg">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/coffee_green.jpg" class="d-block w-100" alt="Coffee Green" />
+                        <div class="carousel-caption">
+                            <div class="d-grid align-content-start">
+                                <div class="text-start">
+                                    <h4 class="d-inline-block fw-bolder bg-text px-2">Strong Coffee</h4>
+                                    <br />
+                                    <p class="d-inline-block bg-text px-2">For those late night extra kicks</p>
+                                    <br />
+                                    <button type="button" class="btn btn-success btn-lg">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/coffee_yellow.jpg" class="d-block w-100" alt="Coffee Yellow" />
+                        <div class="carousel-caption">
+                            <div class="d-grid align-content-start">
+                                <div class="text-start">
+                                    <h4 class="d-inline-block fw-bolder bg-text px-2">Decafe Coffee</h4>
+                                    <br />
+                                    <p class="d-inline-block bg-text px-2">Perfect blend without kicking needed, just sit and relax</p>
+                                    <br />
+                                    <button type="button" class="btn btn-success btn-lg">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
-        <div>
-            <section>
+        <div class="container my-5 p-lg-5" id="aboutus">
+            <section class="text-center">
                 <h2>About Us</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati enim eum debitis voluptatibus sequi earum inventore quaerat quidem voluptas consequatur cum nam optio impedit quos voluptatem, blanditiis reiciendis
@@ -122,34 +140,44 @@
                 </p>
             </section>
         </div>
-
-        <div>
-            <h2>Contact Us</h2>
-
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required /><br />
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required /><br />
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea><br />
-
-                <input type="submit" value="Submit" />
-            </form>
+        <!-- Contact form section -->
+        <div class="container my-5 p-lg-5" id="">
+            <div class="text-center">
+                <h2>Contact Us<i class="bi-cup-hot-fill ms-2"></i></h2>
+            </div>
+            <div class="row p-2 justify-content-center">
+                <form class="col-lg-8">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="John Doe" />
+                        <label for="floatingName">Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control mt-3" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                    <div class="form-check mt-3">
+                        <input type="checkbox" class="form-check-input" id="Check1" />
+                        <label class="form-check-label" for="Check1">Agree to Terms and Conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
         </div>
-
+        <!-- footer info -->
         <footer>
-            <div>
-                <section>
+            <div class="container-fluid">
+                <section class="text-center">
                     <h2>Additional contact info</h2>
                     <p>Visit us: xxxxxxxxxxxx</p>
                     <p>Email: info@simplecoffee.com</p>
                     <p>Phone: 033/999-999</p>
+                    <p>&copy; 2024 Simple Coffee.</p>
                 </section>
             </div>
-            <p>&copy; 2024 Simple Coffee.</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
