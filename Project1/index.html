@@ -12,7 +12,7 @@
         <title>Simple Coffee</title>
     </head>
     <body>
-        <header>
+        <header id="backtop">
             <img src="images/bean.png" id="bean" class="z-2" alt="bean" width="100px" height="50px" />
             <div class="text-center">
                 <h1 class="display-1 z-1">Simple Coffee</h1>
@@ -20,38 +20,43 @@
             </div>
         </header>
         <!--Navigaion bar with sticky top-->
-        <nav class="navbar sticky-top navbar-expand-lg bg-light flexible border-1">
+        <nav class="navbar sticky-top navbar-expand-lg bg-light border-1 border-bottom flexible">
             <div class="container-fluid">
                 <img class="d-none d-lg-block" src="images/c_icon.png" alt="coffee_icon" width="50px" height="50px" />
-                <a class="navbar-brand" href="#">SimpleCoffee</a>
+                <a class="navbar-brand font-change" href="#backtop">SimpleCoffee</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#products">Products</a>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link rounded-pill p-2" href="#products">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">About Us</a>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link rounded-pill p-2" href="#aboutus">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link rounded-pill p-2" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link rounded-pill p-2" href="#contactus">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!--Introduction section just something simple-->
-        <div class="container-lg my-5">
+        <div class="container spacing">
             <section class="text-center">
                 <h2>Welcome to Simple Coffee</h2>
-                <p id="products">The finest coffee experience in town.</p>
+                <p>The finest coffee experience in town.</p>
+                <img src="images/bean.png" id="bean-secondary" class="z-2" width="100px" height="50px" />
             </section>
         </div>
         <!--Products carousel-->
-        <div class="container-xl">
-            <h2 class="text-center">Our Products</h2>
+        <div id="products"></div>
+        <div class="container spacing">
+            <h2 class="text-center font-change">Our Products</h2>
             <div id="carouselExampleCaptions" class="carousel slide carousell">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -127,21 +132,63 @@
                 </button>
             </div>
         </div>
-
-        <div class="container my-5 p-lg-5" id="aboutus">
+        <!-- About us section -->
+        <div id="aboutus"></div>
+        <div class="container p-lg-5 spacing">
             <section class="text-center">
-                <h2>About Us</h2>
+                <h2 class="font-change">About Us</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati enim eum debitis voluptatibus sequi earum inventore quaerat quidem voluptas consequatur cum nam optio impedit quos voluptatem, blanditiis reiciendis
-                    placeat? Saepe laudantium voluptatum, inventore error voluptatibus officiis sit possimus praesentium facere! Dolorum ullam delectus sunt tempore libero illo ipsam, in expedita, eligendi accusantium aut quasi! Dicta id ad deserunt
-                    saepe. Molestiae ea repellendus qui consequatur expedita, alias assumenda officiis. Facilis impedit optio, hic eaque numquam exercitationem, dolorem sapiente id culpa illo asperiores quos labore iusto sit, voluptatem praesentium
-                    quibusdam dicta. Provident incidunt et, alias excepturi dolorem veritatis eos aliquid necessitatibus quisquam, enim error vitae cum architecto? Provident nobis veritatis blanditiis obcaecati, beatae adipisci maiores, at doloribus
-                    illum ea nulla vel. Minima ullam nihil ad! Illum quo sed fuga, fugit commodi corrupti id voluptatem labore ad officia amet doloremque, ipsum soluta! Nisi inventore ut libero neque praesentium excepturi accusantium ad! In.
+                    Welcome to our cozy corner of caffeine delight! At Simple Coffee, we craft more than just coffee, we create experiences. Our passion for coffee drives us to deliver the finest brews to our cherished customers. Every product we
+                    deliver is a testament to our commitment to quality and craftsmanship. From carefully selecting the finest beans to expertly roasting them to perfection, we take pride in every step of the process. Whether you're a connoisseur
+                    seeking the bold richness of an espresso or someone looking to savor a soothing cup of freshly brewed drip coffee, we have something to tantalize every palate. But we're more than just a coffee shop, we're a community hub. Our
+                    warm and inviting space is where friendships are forged over steaming mugs, where ideas are born over shared tables, and where moments are savored amidst the aroma of freshly ground beans. At Simple Coffee, we believe in
+                    sustainability and giving back to the community that fuels our passion. That's why we source our beans ethically and strive to minimize our environmental footprint. So come, join us for a sip of something special. Let us awaken
+                    your senses and ignite your passion for great coffee. Welcome to the Simple Coffee family.
                 </p>
             </section>
         </div>
+        <!-- Review section -->
+        <div id="reviews"></div>
+        <div class="container spacing">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="align-self-center">
+                            <img src="images/avatar1.png" class="card-img-top" height="200px" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">John Doe</h5>
+                            <p class="card-text">"Awesome coffee products. Me and my wife really enjoy every pack. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="align-self-center">
+                            <img src="images/avatar2.png" class="card-img-top" height="200px" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jane Doe</h5>
+                            <p class="card-text">"Wow, this coffee is amazing! Rich flavor with just the right kick of caffeine. Definitely waking up my taste buds!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="align-self-center">
+                            <img src="images/avatar3.png" class="card-img-top" height="200px" />
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Richard Roe</h5>
+                            <p class="card-text">"The extreme blend bursts with such richness, delivering a smooth and satisfying sip every time. A perfect pick-me-up for any morning!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Contact form section -->
-        <div class="container my-5 p-lg-5" id="">
+        <div id="contactus"></div>
+        <div class="container p-lg-5 spacing">
             <div class="text-center">
                 <h2>Contact Us<i class="bi-cup-hot-fill ms-2"></i></h2>
             </div>
@@ -163,20 +210,53 @@
                         <input type="checkbox" class="form-check-input" id="Check1" />
                         <label class="form-check-label" for="Check1">Agree to Terms and Conditions</label>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    <button type="button" class="btn btn-primary btn-hoverable-submit mt-3" data-bs-toggle="modal" data-bs-target="#Modal">Submit</button>
                 </form>
+            </div>
+        </div>
+        <!-- Modal pop-up -->
+        <div class="modal fade" id="Modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="ModalLabel">Sent<i class="bi bi-envelope-arrow-up ms-2"></i></h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">Thank you for your feedback :)</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- footer info -->
         <footer>
-            <div class="container-fluid">
-                <section class="text-center">
-                    <h2>Additional contact info</h2>
-                    <p>Visit us: xxxxxxxxxxxx</p>
-                    <p>Email: info@simplecoffee.com</p>
-                    <p>Phone: 033/999-999</p>
-                    <p>&copy; 2024 Simple Coffee.</p>
-                </section>
+            <div class="spacing">
+                <div class="text-center">
+                    <h2 class="my-3">Additional contact info</h2>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <section class="col-lg-3 text-center">
+                            <p>Visit us: xxxxxxxxxxxx</p>
+                            <p>Email: info@simplecoffee.com</p>
+                            <p>Phone: 033/999-999</p>
+                            <p>&copy; 2024 Simple Coffee.</p>
+                        </section>
+                        <div class="col-lg-6 text-center align-self-center">
+                            <div class="">
+                                <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-facebook"></i></button>
+                                <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-instagram"></i></button>
+                                <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-youtube"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center align-self-center my-3">
+                            <a href="#backtop">
+                                <button type="button" class="btn btn-light"><i class="bi bi-arrow-up-circle-fill">Top</i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
