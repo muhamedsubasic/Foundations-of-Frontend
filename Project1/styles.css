@@ -1,0 +1,134 @@
+h1 {
+    font-family: "Sofia", sans-serif;
+    color: white;
+    text-shadow: 10px 10px black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.font-change {
+    font-family: "Sofia", sans-serif;
+}
+.spacing {
+    margin-top: 200px;
+}
+.coffee {
+    background-image: url(images/coffee_beans.jpg);
+    background-size: cover;
+    filter: blur(4px);
+    height: 90vh;
+}
+.form-check-input:hover {
+    cursor: pointer;
+}
+.form-check-input:active {
+    cursor: pointer;
+    animation: rotate;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.btn-hoverable-submit:hover {
+    text-indent: 1px;
+    background-color: blue;
+    border-color: black;
+    transform: translateY(2px);
+    transition: all 0.4s;
+}
+.nav-link:hover {
+    background-color: burlywood;
+    box-shadow: 3px 3px gray;
+}
+.nav-link:focus {
+    background-color: burlywood;
+    transform: translateY(5px);
+    box-shadow: 1px 1px gray;
+    transition: 0.2s;
+}
+.bg-text {
+    color: white;
+    background-color: rgba(206, 153, 85, 0.402);
+    backdrop-filter: blur(3px);
+}
+
+.carousel .carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    position: cover;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 700px;
+}
+footer {
+    background-color: burlywood;
+}
+#bean-secondary {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    animation: beanmovingleft;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+@keyframes beanmovingleft {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 50%;
+        transform: rotate(360deg);
+    }
+}
+#bean {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    animation-name: beanmove;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes beanmove {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    20% {
+        left: 0px;
+        top: 10%;
+    }
+    40% {
+        left: 0px;
+        top: 0px;
+        transform: rotate(360deg);
+    }
+    60% {
+        left: 0px;
+        top: 85%;
+    }
+    80% {
+        left: 0px;
+        top: 75%;
+    }
+    100% {
+        left: 0px;
+        top: 85%;
+    }
+}
